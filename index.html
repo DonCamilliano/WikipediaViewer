@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
+</head>
+
+<body class="back" ng-app="myApp">
+    <main class="container">
+        <article class="row artcl">
+            <div class="col-xs-12 random">
+                Click <a class="tit" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">here</a> to search
+                random article.
+            </div>
+            <div class="row" ng-controller="myCtrl">
+                <div class="col-xs-4 col-xs-push-4">
+                <form ng-submit="newSearch()">
+                    <div class="input-group">
+                        <input ng-model="search" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn" type="button submit">Search</button>
+                        </span>
+                    </div>
+                </div>    
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob1}}" target="_blank">{{ob1}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob2}}" target="_blank">{{ob2}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob3}}" target="_blank">{{ob3}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob4}}" target="_blank">{{ob4}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob5}}" target="_blank">{{ob5}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob6}}" target="_blank">{{ob6}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob7}}" target="_blank">{{ob7}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob8}}" target="_blank">{{ob8}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob9}}" target="_blank">{{ob9}}</a>
+                            </div>
+                            <div ng-show="ob1" class="col-xs-8 col-xs-push-2 result">
+                                <a class="result" href="https://en.wikipedia.org/wiki/{{ob10}}" target="_blank">{{ob10}}</a>
+                            </div>
+                            <div class="message alert alert-danger" ng-show="message" ng-bind="message"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

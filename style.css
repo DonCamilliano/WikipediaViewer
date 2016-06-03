@@ -1,0 +1,53 @@
+.back {
+    background-color: #6491a6;
+    color: #f22b0e;
+    font-size: 20px;
+}
+
+.random {
+    margin: 10px 0;
+}
+
+.artcl {
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.tit {
+    color: #fff;
+    
+}
+
+.tit:hover {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #f22b0e;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #337ab7;
+}
+
+.form-control {
+    border: 3px solid #f22b0e;
+    background-color: #6491a6;
+}
+
+.result {
+    background-color: #fffdf7;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+
+.result a {
+    color: #f22b0e;
+}
+
+.result a:hover {
+    text-decoration: none;
+}
